@@ -4,9 +4,8 @@
   "displayName": "EAPUOC eManual",
   "cordova": {
     "platforms": [
-      "ios",
-      "android",
-      "browser"
+      "browser",
+      "android"
     ],
     "plugins": {
       "cordova-plugin-console": {},
@@ -17,7 +16,6 @@
   "dependencies": {
     "cordova-android": "^6.3.0",
     "cordova-browser": "^5.0.1",
-    "cordova-ios": "^4.5.3",
     "cordova-plugin-console": "~1.0.1",
     "cordova-plugin-statusbar": "~1.0.1",
     "cordova-plugin-whitelist": "~1.2.0"

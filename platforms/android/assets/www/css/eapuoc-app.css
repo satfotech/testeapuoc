@@ -2568,11 +2568,9 @@ html.pixel-ratio-3 .list-block ul:after {
   margin-left: 15px;
 }
 .list-block .item-inner {
-  padding-right: 15px;
+  padding: 4%;
   position: relative;
   width: 100%;
-  padding-top: 8px;
-  padding-bottom: 7px;
   min-height: 44px;
   box-sizing: border-box;
   display: -webkit-box;
@@ -8036,7 +8034,6 @@ html.ios-gt-8 .data-table .data-table-title {
 
 .main-menu ul li {
   font-family: Whitney-Light;
-  height: 60px;
   color: white;
   padding: 0;
   margin: 0;
@@ -8071,7 +8068,6 @@ html.ios-gt-8 .data-table .data-table-title {
 }
 
 .main-menu ul li div div div {
-  height: 60px;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -8397,4 +8393,9 @@ hr {
   #map {
     width: 100vw;
     height: 100vh;
+  }
+
+  .align-left{
+    font-size: 12pt;
+    text-align: left;
   }

@@ -1,84 +1,51 @@
 {
-    "prepare_queue": {
-        "installed": [],
-        "uninstalled": []
-    },
-    "config_munge": {
-        "files": {
-            "res/xml/config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"SitewaertsDocumentViewer\"><param name=\"android-package\" value=\"de.sitewaerts.cordova.documentviewer.DocumentViewerPlugin\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
             },
-            "AndroidManifest.xml": {
-                "parents": {
-                    "/manifest": [
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />",
-                            "count": 1
-                        }
-                    ],
-                    "/manifest/application": [
-                        {
-                            "xml": "<provider android:authorities=\"com.getyardstick.EAPUOC.DocumentViewerPlugin.fileprovider\" android:exported=\"false\" android:grantUriPermissions=\"true\" android:name=\"de.sitewaerts.cordova.documentviewer.FileProvider\"><meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"@xml/documentviewer_file_paths\" /></provider>",
-                            "count": 1
-                        }
-                    ]
-                }
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
             }
+          ]
         }
-    },
-    "installed_plugins": {
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.getyardstick.EAPUOC"
-        },
-        "cordova-plugin-document-viewer": {
-            "PACKAGE_NAME": "com.getyardstick.EAPUOC"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.getyardstick.EAPUOC"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.getyardstick.EAPUOC"
-        }
-    },
-    "dependent_plugins": {},
-    "modules": [
-        {
-            "id": "cordova-plugin-document-viewer.SitewaertsDocumentViewer",
-            "file": "plugins/cordova-plugin-document-viewer/www/sitewaertsdocumentviewer.js",
-            "pluginId": "cordova-plugin-document-viewer",
-            "clobbers": [
-                "cordova.plugins.SitewaertsDocumentViewer",
-                "SitewaertsDocumentViewer"
-            ]
-        },
-        {
-            "id": "cordova-plugin-statusbar.statusbar",
-            "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-            "pluginId": "cordova-plugin-statusbar",
-            "clobbers": [
-                "window.StatusBar"
-            ]
-        }
-    ],
-    "plugin_metadata": {
-        "cordova-plugin-console": "1.0.7",
-        "cordova-plugin-document-viewer": "0.9.5",
-        "cordova-plugin-statusbar": "1.0.1",
-        "cordova-plugin-whitelist": "1.2.2"
+      }
     }
+  },
+  "installed_plugins": {
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.getyardstick.EAPUOC"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.getyardstick.EAPUOC"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.getyardstick.EAPUOC"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-statusbar.statusbar",
+      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+      "pluginId": "cordova-plugin-statusbar",
+      "clobbers": [
+        "window.StatusBar"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-console": "1.0.7",
+    "cordova-plugin-statusbar": "1.0.1",
+    "cordova-plugin-whitelist": "1.2.2"
+  }
 }
