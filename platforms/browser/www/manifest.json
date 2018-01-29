@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "EAPUOC eManual",
+  "short_name": "EAPUOC eManual",
+  "version": "com.getyardstick.EAPUOC",
+  "description": "EAPUOC Electronic Manual",
+  "author": "Yardstick Software",
+  "icons": [],
+  "start_url": "index.html"
+}
