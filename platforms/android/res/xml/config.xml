@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.getyardstick.EAPUOC" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="SitewaertsDocumentViewer">
+        <param name="android-package" value="de.sitewaerts.cordova.documentviewer.DocumentViewerPlugin" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>EAPUOC eManual</name>
+    <description>
+        EAPUOC Electronic Manual
+    </description>
+    <author email="joannec@getyardstick.com" href="http://www.getyardstick.com">
+        Yardstick Software
+    </author>
+    <splash height="480" platform="ios" src="www/img/EAPUOC-splash.jpg" width="320" />
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-navigation href="http://www.eapuoc.com/*" />
+    <allow-navigation href="http://www.aer.ca/*" />
+    <allow-navigation href="www.neb-one.gc.ca/*" />
+    <allow-intent href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+</widget>
